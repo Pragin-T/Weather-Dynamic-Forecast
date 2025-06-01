@@ -16,7 +16,11 @@ A modern and responsive weather forecasting web application built with **React.j
 
 ## 📸 Screenshots
 
-<img src="./public/Web-app-Screenshot.gif" alt="Weather App Demo" width="600" />
+### Weather App Demo
+![Weather App Demo](./public/Web-app-Screenshot.gif)
+
+### Mobile App Demo
+![Mobile App Demo](./public/Mobile-app_screen.gif)
 
 ## 🛠️ Tech Stack
 
