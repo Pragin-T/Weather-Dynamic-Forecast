@@ -64,12 +64,9 @@ cd Weather-Dynamic-Forecast
 Install dependencies
 
 ```bash
-npm install Install Chakra UI (if not already installed)
-
-npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
-# Start the development server
-
+npm install @chakra-ui/react @emotion/react @emotion/styled framer-motion
 npm start
+
 🔐 API Usage
 This app uses the OpenWeatherMap API
 
