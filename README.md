@@ -12,6 +12,15 @@ A modern and responsive weather forecasting web application built with **React.j
 - 📱 Fully responsive design using Chakra UI
 - 🌙 Light/Dark mode toggle
 
+🔐 API Usage
+This app uses the OpenWeatherMap API
+
+📄 License
+This project is licensed under the MIT License.
+
+🙋‍♂️ Author
+T. Pragin
+
 ---
 
 ## 📸 Screenshots
@@ -60,22 +69,16 @@ A modern and responsive weather forecasting web application built with **React.j
 Clone the repository
 
 git clone [https://github.com/yourusername/Weather-Dynamic-Forecast.git](https://github.com/Pragin-T/Weather-Dynamic-Forecast.git)
+GitHub: Pragin-T
 cd Weather-Dynamic-Forecast
-Install dependencies
+Install dependencies and Run
 
 ```bash
 npm install @chakra-ui/react @emotion/react @emotion/styled framer-motion
 npm start
 
-🔐 API Usage
-This app uses the OpenWeatherMap API
 
-📄 License
-This project is licensed under the MIT License.
 
-🙋‍♂️ Author
-T. Pragin
 
-GitHub: Pragin-T
 
 
