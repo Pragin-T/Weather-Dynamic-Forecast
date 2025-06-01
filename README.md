@@ -26,7 +26,7 @@ T. Pragin
 ## 📸 Screenshots
 
 <h3>Weather App Demo</h3>
-<img src="./public/Web-app-Screenshot.gif" alt="Weather App Demo" width="1200" />
+<img src="./public/Web-app-Screenshot.gif" alt="Weather App Demo" width="600" />
 
 <h3>Mobile App Demo</h3>
 <img src="./public/Mobile-app_screen.gif" alt="Mobile App Demo" width="600" />
