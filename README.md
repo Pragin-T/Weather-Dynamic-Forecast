@@ -10,7 +10,6 @@ A modern and responsive weather forecasting web application built with **React.j
 - 📅 5-day weather forecast with date, temp, humidity, wind speed
 - 🎞️ Dynamic weather-based GIFs
 - 📱 Fully responsive design using Chakra UI
-- 🌙 Light/Dark mode toggle
 
 🔐 API Usage
 This app uses the OpenWeatherMap API
