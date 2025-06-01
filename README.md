@@ -16,7 +16,7 @@ A modern and responsive weather forecasting web application built with **React.j
 
 ## 📸 Screenshots
 
-> _Add screenshots or a screen recording here if possible._
+![Weather-Dynamic-Forecast Demo](./public/Web-app-Screenshot.gif)
 
 ---
 
