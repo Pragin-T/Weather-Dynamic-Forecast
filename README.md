@@ -63,11 +63,11 @@ git clone [https://github.com/yourusername/Weather-Dynamic-Forecast.git](https:/
 cd Weather-Dynamic-Forecast
 Install dependencies
 
-npm install
-Install Chakra UI (if not already installed)
+```bash
+npm install Install Chakra UI (if not already installed)
 
 npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
-Start the development server
+# Start the development server
 
 npm start
 🔐 API Usage
