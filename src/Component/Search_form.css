@@ -1,0 +1,215 @@
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+  .in-head{
+  color: #3182ce;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.City-hold {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #3182ce; /* blue border */
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.City-hold::placeholder {
+  color: #a0aec0; /* lighter gray */
+  font-style: italic;
+}
+
+.City-hold:focus {
+  border-color: #2c5282; /* darker blue */
+  box-shadow: 0 0 5px rgba(49, 130, 206, 0.5);
+}
+
+.Search-btn {
+  background-color: #5372F0; /* blue */
+  color: white;
+  margin: 10px auto 0 auto; /* top margin 10px, auto left/right for centering */
+  padding: 10px 50px;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  display: block; /* centers the button horizontally */
+}
+
+.Search-btn:hover:not(:disabled) {
+  background-color: #2c5282; /* darker blue on hover */
+}
+
+.Search-btn:disabled {
+  background-color: #a0aec0; /* gray */
+  cursor: not-allowed;
+}
+
+.Location-btn {
+  background-color: #6C757D; /* blue */
+  color: white;
+  margin: 10px auto 0 auto; /* top margin 10px, auto left/right for centering */
+  padding: 10px 50px;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  display: block; /* make button block-level to center */
+}
+
+.Location-btn:hover:not(:disabled) {
+  background-color: #3c4959; /* darker blue on hover */
+}
+
+.Location-btn:disabled {
+  background-color: #a0aec0; /* gray */
+  cursor: not-allowed;
+}
+
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  color: #666;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+  margin: 0 10px;
+}
+
+.in-headie {
+  font-weight: 600;
+  font-size: 14px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+}
+
+@media (min-width: 600px) {
+    .in-head{
+  color: #3182ce;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.City-hold {
+  margin-top: 10px;
+  width: 150%;
+  max-width: 500px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #3182ce; /* blue border */
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.City-hold::placeholder {
+  color: #a0aec0; /* lighter gray */
+  font-style: italic;
+}
+
+.City-hold:focus {
+  border-color: #2c5282; /* darker blue */
+  box-shadow: 0 0 5px rgba(49, 130, 206, 0.5);
+}
+
+.Search-btn {
+  background-color: #5372F0; /* blue */
+  color: white;
+  margin: 10px auto 0 auto; /* top margin 10px, auto left/right for centering */
+  padding: 10px 100px;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;    /* or absolute */            /* move down */
+  left: 70px;    
+  transition: background-color 0.3s ease;
+  user-select: none;
+  display: block; /* centers the button horizontally */
+}
+
+.Search-btn:hover:not(:disabled) {
+  background-color: #2c5282; /* darker blue on hover */
+}
+
+.Search-btn:disabled {
+  background-color: #a0aec0; /* gray */
+  cursor: not-allowed;
+}
+
+.Location-btn {
+  background-color: #6C757D; /* blue */
+  color: white;
+  margin: 10px auto 0 auto; /* top margin 10px, auto left/right for centering */
+  padding: 10px 50px;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  position: relative;
+  left: 70px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  display: block; /* make button block-level to center */
+}
+
+.Location-btn:hover:not(:disabled) {
+  background-color: #3c4959; /* darker blue on hover */
+}
+
+.Location-btn:disabled {
+  background-color: #a0aec0; /* gray */
+  cursor: not-allowed;
+}
+
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  left: 70px;
+  margin: 20px 0;
+  color: #666;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+  margin: 0 10px;
+}
+
+.in-headie {
+  font-weight: 600;
+  font-size: 14px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+}
