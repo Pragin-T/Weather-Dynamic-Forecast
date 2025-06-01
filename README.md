@@ -59,7 +59,7 @@ A modern and responsive weather forecasting web application built with **React.j
 🧪 Local Setup
 Clone the repository
 
-git clone https://github.com/yourusername/Weather-Dynamic-Forecast.git
+git clone [https://github.com/yourusername/Weather-Dynamic-Forecast.git](https://github.com/Pragin-T/Weather-Dynamic-Forecast.git)
 cd Weather-Dynamic-Forecast
 Install dependencies
 
