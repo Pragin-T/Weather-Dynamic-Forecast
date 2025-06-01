@@ -32,24 +32,33 @@ A modern and responsive weather forecasting web application built with **React.j
 
 ## 📁 Folder Structure
 
-/src
-├── Component/
-│ ├── Api.js
-│ ├── Forecast_Display.js
-│ ├── Home_page.js
-│ ├── Nav.js
-│ ├── Search_form.js
-│ ├── Today_Forecast.js
-│ ├── *.css
-├── components/ui/
-│ ├── color-mode.jsx
-│ ├── provider.jsx
-│ ├── toaster.jsx
-│ └── tooltip.jsx
-├── App.js
-├── App.css
-├── index.js
-└── index.css
+Weather-Dynamic-Forecast/
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   └── assets/
+│       ├── weather-demo.gif
+│       ├── Clouds.gif
+│       ├── Sunny.gif
+│       └── ...other weather gifs
+│
+├── src/
+│   ├── Component/
+│   │   ├── Nav.js
+│   │   ├── Search_Form.js
+│   │   ├── Today_Forecast.js
+│   │   └── Forecast_Display.js
+│   │
+│   ├── Api.js
+│   ├── Home_page.js
+│   └── index.js
+│
+├── .env
+├── .gitignore
+├── package.json
+├── README.md
+└── LICENSE
+
 ---
 🧪 Local Setup
 Clone the repository
