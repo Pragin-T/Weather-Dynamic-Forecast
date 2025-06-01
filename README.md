@@ -42,29 +42,30 @@ T. Pragin
 ---
 ## 📁 Project Folder Structure
 
-- Weather-Dynamic-Forecast/
-  - public/
-    - index.html
-    - favicon.ico
-    - assets/
-      - weather-demo.gif
-      - Clouds.gif
-      - Sunny.gif
-      - ...other weather gifs
-  - src/
-    - Component/
-      - Nav.js
-      - Search_Form.js
-      - Today_Forecast.js
-      - Forecast_Display.js
-    - Api.js
-    - Home_page.js
-    - index.js
-  - .env
-  - .gitignore
-  - package.json
-  - README.md
-  - LICENSE
+- `Weather-Dynamic-Forecast/`
+  - `public/`
+    - `index.html`
+    - `favicon.ico`
+    - `weather-demo.gif`
+    - `Clouds.gif`
+    - `Sunny.gif`
+    - `Rain.gif`
+    - `...other weather GIFs`
+  - `src/`
+    - `Component/`
+      - `Nav.js`
+      - `Search_Form.js`
+      - `Today_Forecast.js`
+      - `Forecast_Display.js`
+      - `Home_page.js`
+    - `Api.js`
+    - `index.js`
+  - `.env`
+  - `.gitignore`
+  - `package.json`
+  - `README.md`
+  - `LICENSE`
+
 🧪 Local Setup
 Clone the repository
 
