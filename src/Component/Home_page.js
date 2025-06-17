@@ -1,5 +1,4 @@
 import Nav from "./Nav";
-//Weather Forecasting Project Using React-Developed By Pragin T
 import SearchForm from "./Search_form";
 import TodayForecast from "./Today_Forecast";
 import ForecastDisplay from "./Forecast_Display";
@@ -29,21 +28,23 @@ const initialForecastData = {
   }),
 };
 
-// Map weather to animated GIFs
+// ✅ Correct path for GitHub Pages (images in public/)
 export const getGifPath = (main) => {
+  const base = process.env.PUBLIC_URL;
+
   switch (main) {
     case "Clear":
-      return "/Sunny.gif";
+      return `${base}/Sunny.gif`;
     case "Clouds":
-      return "/Clouds.gif";
+      return `${base}/Clouds.gif`;
     case "Rain":
-      return "/Rain.gif";
+      return `${base}/Rain.gif`;
     case "Drizzle":
-      return "/Wind.gif";
+      return `${base}/Wind.gif`;
     case "Thunderstorm":
-      return "/Thunder.gif";
+      return `${base}/Thunder.gif`;
     case "Snow":
-      return "/Snow.gif";
+      return `${base}/Snow.gif`;
     case "Mist":
     case "Smoke":
     case "Haze":
@@ -53,31 +54,28 @@ export const getGifPath = (main) => {
     case "Ash":
     case "Squall":
     case "Tornado":
-      return "/Wind.gif";
+      return `${base}/Wind.gif`;
     default:
-      return "/Clouds.gif";
+      return `${base}/Clouds.gif`;
   }
 };
 
-// Homepage State Functions
 function Homepage() {
   const [city, setCity] = useState("");
   const [forecastData, setForecastData] = useState(initialForecastData);
-  const [weatherGif, setWeatherGif] = useState("/Clouds.gif");
+  const [weatherGif, setWeatherGif] = useState(`${process.env.PUBLIC_URL}/Clouds.gif`);
   const toast = useToast();
 
-  // HandleSearch Function To get values
   const handleSearch = async () => {
     try {
       const { name, lat, lon } = await getCoordinates(city);
       const weatherList = await getWeather(lat, lon);
       const filteredData = filterFiveDaysForecast(weatherList);
       setForecastData({ city: name, list: filteredData });
-      //validating length of the returned array
+
       if (weatherList.length > 0) {
         setWeatherGif(getGifPath(weatherList[0].weather[0].main));
       }
-      //Alert message if no data in array
     } catch (err) {
       toast({
         title: "Search Failed",
@@ -91,7 +89,6 @@ function Homepage() {
   };
 
   const handleUseLocation = () => {
-    //Alert message if no gps support
     if (!navigator.geolocation) {
       toast({
         title: "Geolocation Unsupported",
@@ -103,8 +100,7 @@ function Homepage() {
       });
       return;
     }
-    
-    //This function is used to find the geolocation using lat and lon values
+
     navigator.geolocation.getCurrentPosition(
       async (position) => {
         const { latitude, longitude } = position.coords;
@@ -116,7 +112,6 @@ function Homepage() {
           setForecastData({ city: cityName, list: filteredData });
           setCity(cityName);
 
-          // Updating value of gif from default using setstate
           if (weatherList.length > 0) {
             setWeatherGif(getGifPath(weatherList[0].weather[0].main));
           }
@@ -131,20 +126,19 @@ function Homepage() {
           });
         }
       },
-      // Successful message appears if location found
       (error) => {
-          toast({
-            title: "Search Successful",
-            status: "success",
-            duration: 3000,
-            isClosable: true,
-            position: "top-right",
-          });
+        toast({
+          title: "Search Successful",
+          status: "success",
+          duration: 3000,
+          isClosable: true,
+          position: "top-right",
+        });
         console.error(error);
       }
     );
   };
-  //Used to return string date with default values 
+
   const formatDate = (dt_txt) => {
     if (!dt_txt) return "_____";
     const date = new Date(dt_txt);
@@ -153,7 +147,6 @@ function Homepage() {
   };
 
   return (
-    //Ui part 
     <ChakraProvider>
       <Nav />
       <Stack direction={{ base: "column", md: "column", lg: "row" }} spacing={4}>
@@ -185,9 +178,7 @@ function Homepage() {
             fontWeight="bold"
           >
             {forecastData.city} - {formatDate(forecastData.list[0].dt_txt)}
-            
           </Text>
-          {/*Condition Rendering*/}
           <TodayForecast data={forecastData.list[0]} gif={weatherGif} />
         </Box>
       </Stack>
