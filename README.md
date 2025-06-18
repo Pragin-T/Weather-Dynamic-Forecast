@@ -79,7 +79,7 @@ A modern and responsive weather forecasting web application built with **React.j
 This app uses the OpenWeatherMap API.
 
 📄 **License**  
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](./LICENSE).
 
 🙋‍♂️ Author
 Made with ❤️ by T. Pragin
