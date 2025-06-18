@@ -81,5 +81,6 @@ This app uses the OpenWeatherMap API.
 📄 **License**  
 This project is licensed under the MIT License.
 
-🙋‍♂️ **Author**  
-T. Pragin
+🙋‍♂️ Author
+Made with ❤️ by T. Pragin
+GitHub
