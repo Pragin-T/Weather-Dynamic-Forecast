@@ -13,15 +13,6 @@ A modern and responsive weather forecasting web application built with **React.j
 - 🎞️ Dynamic weather-based GIFs  
 - 📱 Fully responsive design using Chakra UI  
 
-🔐 **API Usage**  
-This app uses the OpenWeatherMap API.
-
-📄 **License**  
-This project is licensed under the MIT License.
-
-🙋‍♂️ **Author**  
-T. Pragin
-
 ---
 
 ## 📸 Screenshots
@@ -72,13 +63,23 @@ T. Pragin
 
 ## 🧪 Local Setup
 
-Clone the repository:
+1. **Clone the repository**:
 
-```bash
-git clone https://github.com/Pragin-T/Weather-Dynamic-Forecast.git
-cd Weather-Dynamic-Forecast
+   ```bash
+    git clone https://github.com/Pragin-T/Weather-Dynamic-Forecast.git
+    cd Weather-Dynamic-Forecast
+2. **Install Modules**:
+    ```bash
+    npm install @chakra-ui/react @emotion/react @emotion/styled framer-motion
+    npm install
+    npm start
+   
 
+🔐 **API Usage**  
+This app uses the OpenWeatherMap API.
 
-npm install @chakra-ui/react @emotion/react @emotion/styled framer-motion
-npm install
-npm start
+📄 **License**  
+This project is licensed under the MIT License.
+
+🙋‍♂️ **Author**  
+T. Pragin
