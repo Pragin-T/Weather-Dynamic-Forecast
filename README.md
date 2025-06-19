@@ -86,5 +86,5 @@ This project is licensed under the [MIT License](./LICENSE).
 ## 🙋‍♂️ Author
 
 Made with ❤️ by **T. Pragin**
-
+Email: pragin.t.developer@gmail.com
 [GitHub](https://github.com/Pragin-T)
